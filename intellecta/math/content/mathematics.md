@@ -1,3 +1,5 @@
+# Mathematics
+
 The word mathematics comes from Ancient Greek máthēma (μάθημα), meaning "that which is learnt", "what one gets to know". (From wikipedia)
 
 These topics are represented in modern mathematics with the major subdisciplines of number theory, algebra, geometry, and analysis, respectively.
