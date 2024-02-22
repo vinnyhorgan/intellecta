@@ -8,7 +8,7 @@ This type of questions often, if not always, fall into **philosophic debacles**.
 
 Multiple set of axioms has been proposed, but usually the idea of natural numbers arises from the concept of "emptiness" or "nothingness". If you have nothing, you could have something. That something we call the successor of nothing, the same for the successor of the successor of nothing and so on.
 
-The most used axioms were stated by Giuseppe Peano. Even if nowadays they are known to be paradoxical and can lead to contradictions, the **Peano axioms** are still incredibly useful and relevant, other than a strong foundation of mathematics. 
+The most used axioms were stated by Giuseppe Peano. Even if nowadays they are known to be paradoxical and can lead to contradictions, the **Peano axioms** are still incredibly useful and relevant, other than a strong foundation of mathematics.
 
 He claimed the natural numbers are the members of a [set](sets_maps.html) \(\N\), and gave that set these properties:
 >1. ##### \(\N\) has a distinguished element which we call ‘0’.
@@ -34,16 +34,16 @@ The fifth axiom is the most complex, it is called the induction axiom, and it fo
  > - for every natural number \(n\), \(\phi (n)\) being true implies that \(\phi (\sigma (n))\) is true,
  >then \(\phi (n)\) is true for every natural number \(n\).
 
-**Simplified:** If a certain statement is proved to be true for both a random number \(n \in \N \) and for \(\sigma (n) \in \N\) and it is true for the number '0', then is reasonable to be true for every single \(n \in \N\). This can be visualized as a **domino effect**, in that case it would state: if for every piece that falls the next one falls too and the first one falls, then it is reasonable to assume that every piece in the line will fall. 
+**Simplified:** If a certain statement is proved to be true for both a random number \(n \in \N \) and for \(\sigma (n) \in \N\) and it is true for the number '0', then is reasonable to be true for every single \(n \in \N\). This can be visualized as a **domino effect**, in that case it would state: if for every piece that falls the next one falls too and the first one falls, then it is reasonable to assume that every piece in the line will fall.
 
 Let's call the map \(\sigma \) "the successor". Notice that the successor of 0 is mapped to something else, which is also in \(\N\). We'll call that "0.next". Now, since 0.next is in \(\N\), it's successor is in \(\N\), too. We'll call that "0.next.next". Now we decide to create new symbols representing these concepts that arise from recursively applying the successor: \(\{0, 1, 2, 3, 4, ...\}\).
 
 Since we cannot check infinite terms we use the axiom of induction, paired with the others, to prove that all natural numbers are obtained using the successor map:
 
 > It is true that 0 is in \(\N\). _First axiom._
-> 
+>
 > It is also true that for every \(n \in \N, \sigma (n) \in \N \). _Second to fourth axioms._
-> 
+>
 > Then it is true that every natural number \(\n\) is in \(\N\). _Fifth axiom._
 
 Finally, we arrived at the definition of natural numbers as we know them. From now on, when we will refer to them, you will not only know the spontaneous and trivial definition, but you'll be able to formally describe them.
