@@ -46,7 +46,7 @@ with open("public/index.html", "w") as file:
             </main>
 
             <footer>
-                <p>A project started by Vinny Horgan and Francesco Catalanotti.<br>
+                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
                 To make knowledge accessible to everyone.<br>
                 All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
             </footer>
@@ -104,7 +104,7 @@ with open("public/math/index.html", "w") as file:
             </main>
 
             <footer>
-                <p>A project started by Vinny Horgan and Francesco Catalanotti.<br>
+                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
                 To make knowledge accessible to everyone.<br>
                 All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
             </footer>
@@ -144,6 +144,9 @@ for file in os.listdir("intellecta/math/content"):
                         :root {
                             --accent: green;
                         }
+                        main p {
+                            text-align: justify;
+                        }
                     </style>
                 </head>
                 <body>
@@ -167,7 +170,7 @@ for file in os.listdir("intellecta/math/content"):
                     </main>
 
                     <footer>
-                        <p>A project started by Vinny Horgan and Francesco Catalanotti.<br>
+                        <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
                         To make knowledge accessible to everyone.<br>
                         All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
                     </footer>
@@ -221,7 +224,7 @@ with open("public/cs/index.html", "w") as file:
             </main>
 
             <footer>
-                <p>A project started by Vinny Horgan and Francesco Catalanotti.<br>
+                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
                 To make knowledge accessible to everyone.<br>
                 All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
             </footer>
@@ -280,7 +283,7 @@ for file in os.listdir("intellecta/cs/content"):
                     </main>
 
                     <footer>
-                        <p>A project started by Vinny Horgan and Francesco Catalanotti.<br>
+                        <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
                         To make knowledge accessible to everyone.<br>
                         All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
                     </footer>
