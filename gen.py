@@ -104,7 +104,7 @@ for file in os.listdir("intellecta/math/content"):
 
         with open(path, "r") as file:
             content = file.read()
-            html = markdown.markdown(content, extensions=["mdx_math"])
+            html = markdown.markdown(content, extensions=["mdx_math"], extension_configs={"mdx_math": {"enable_dollar_delimiter": True}})
 
         with open(html_path, "w") as file:
             file.write(r'''
