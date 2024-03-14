@@ -2,7 +2,7 @@
 
 An operation is a function which takes zero or more input values to a well-defined output value.
 
-An n-ary operation ω from X1, …, Xn to Y is a [common_functions](common_functions.md) ω: X1 × … × Xn → Y.
+An n-ary operation ω from X1, …, Xn to Y is a [ad_common_functions](ad_common_functions.md) ω: X1 × … × Xn → Y.
 
 ### Sets of numbers
 

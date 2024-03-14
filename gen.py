@@ -42,18 +42,9 @@ with open("public/index.html", "w") as file:
 
     file.write(html)
 
-    file.write(r'''
-            </main>
+    with open("footer.html", "r") as footer:
+        file.write(footer.read())
 
-            <footer>
-                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
-                To make knowledge accessible to everyone.<br>
-                All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-            </footer>
-
-        </body>
-        </html>
-    ''')
 
 if not os.path.exists("public/math"):
     os.mkdir("public/math")
@@ -100,18 +91,8 @@ with open("public/math/index.html", "w") as file:
 
     file.write(html)
 
-    file.write(r'''
-            </main>
-
-            <footer>
-                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
-                To make knowledge accessible to everyone.<br>
-                All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-            </footer>
-
-        </body>
-        </html>
-    ''')
+    with open("footer.html", "r") as footer:
+        file.write(footer.read())
 
 if not os.path.exists("public/math/content"):
     os.mkdir("public/math/content")
@@ -123,7 +104,7 @@ for file in os.listdir("intellecta/math/content"):
 
         with open(path, "r") as file:
             content = file.read()
-            html = markdown.markdown(content, extensions=["mdx_math"])
+            html = markdown.markdown(content, extensions=["mdx_math"], extension_configs={"mdx_math": {"enable_dollar_delimiter": True}})
 
         with open(html_path, "w") as file:
             file.write(r'''
@@ -166,18 +147,8 @@ for file in os.listdir("intellecta/math/content"):
 
             file.write(html)
 
-            file.write(r'''
-                    </main>
-
-                    <footer>
-                        <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
-                        To make knowledge accessible to everyone.<br>
-                        All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-                    </footer>
-
-                </body>
-                </html>
-            ''')
+            with open("footer.html", "r") as footer:
+                file.write(footer.read())
 
 if not os.path.exists("public/cs"):
     os.mkdir("public/cs")
@@ -220,18 +191,8 @@ with open("public/cs/index.html", "w") as file:
 
     file.write(html)
 
-    file.write(r'''
-            </main>
-
-            <footer>
-                <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
-                To make knowledge accessible to everyone.<br>
-                All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-            </footer>
-
-        </body>
-        </html>
-    ''')
+    with open("footer.html", "r") as footer:
+        file.write(footer.read())
 
 if not os.path.exists("public/cs/content"):
     os.mkdir("public/cs/content")
@@ -279,15 +240,5 @@ for file in os.listdir("intellecta/cs/content"):
 
             file.write(html)
 
-            file.write(r'''
-                    </main>
-
-                    <footer>
-                        <p>A project by Vinny Horgan and Francesco Catalanotti.<br>
-                        To make knowledge accessible to everyone.<br>
-                        All content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-                    </footer>
-
-                </body>
-                </html>
-            ''')
+            with open("footer.html", "r") as footer:
+                file.write(footer.read())
