@@ -66,7 +66,7 @@ def copyFolder(source_folder, destination_folder):
 
     return
 
-def mdToHtml(path, extensions, extension_configs):
+def mdToHtml(path, extensions=[], extension_configs={}):
     with open(path, "r") as file:
         html = markdown.markdown(file.read(), extensions=extensions, extension_configs=extension_configs)
         return html
