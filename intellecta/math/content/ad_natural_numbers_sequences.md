@@ -10,41 +10,41 @@ Multiple set of axioms has been proposed, but usually **the idea of natural numb
 
 The most used axioms were stated by Giuseppe Peano. Even if nowadays they are known to be paradoxical and can lead to contradictions, the **Peano axioms** are still incredibly useful and relevant, other than a strong foundation of mathematics.
 
-He claimed the natural numbers were the members of a [set](sets_maps.html) \(\N\) with the following properties:
->##### \(\N\) has a distinguished element which we call ‘0’.
+He claimed the natural numbers were the members of a [set](sets_maps.html) $N$ with the following properties:
+>##### $\N$ has a distinguished element which we call ‘0’.
 
-**Simplified:** The set \(\N\) contains in itself the concept of *emptiness*.
+**Simplified:** The set $\N$ contains in itself the concept of *emptiness*.
 
->##### There exists a distinguished set [map](sets_maps.html) \(\sigma : \N \to \N \).
+>##### There exists a distinguished set [map](sets_maps.html) $\sigma : \N \to \N$.
 
-**Simplified:** There is a map that applied to an element contained in \(\N\) takes us to another element, which is also contained in \(\N\).
+**Simplified:** There is a map that applied to an element contained in $\N$ takes us to another element, which is also contained in $\N$.
 
->##### \(\sigma\) is one-to-one.
+>##### $\sigma$ is one-to-one.
 
 **Simplified:** The map always returns only one specific value, and two elements cannot be mapped to the same value.
 
->##### There does not exist an element \(n \in \N \) such that \(\sigma (n) = 0\).
+>##### There does not exist an element $n \in \N$ such that $\sigma (n) = 0$.
 
-**Simplified:** The map of an element in \(\N\) never takes us to 0.
+**Simplified:** The map of an element in $\N$ never takes us to 0.
 
 The fifth axiom is the most complex, it is called the induction axiom, and it formalizes what could seems a trivial logical assumption.
 
->##### If \(\phi\) is a unary predicate such that:
- >- **\(\phi (0)\) is true, and**
- >- **for every natural number \(n\), \(\phi (n)\) being true implies that \(\phi (\sigma (n))\) is true,**
- >##### then \(\phi (n)\) is true for every natural number \(n\).
+>##### If $\phi$ is a unary predicate such that:
+ >- **$\phi (0)$ is true, and**
+ >- **for every natural number $n$, $\phi (n)$ being true implies that $\phi (\sigma (n))$ is true,**
+ >##### then $\phi (n)$ is true for every natural number $n$.
 
-**Simplified:** If a certain statement is proved to be true for both a random number \(n \in \N \) and for \(\sigma (n)\), and it is true for the number '0', then it's reasonable to be true for every single \(n \in \N\). This can be visualized as a **domino effect**; in that case it would state: if for every piece that falls the next one falls too and the first one falls, then it is reasonable to assume that every piece in the line will fall. 
+**Simplified:** If a certain statement is proved to be true for both a random number $n \in \N$ and for $\sigma (n)$, and it is true for the number '0', then it's reasonable to be true for every single $n \in \N$. This can be visualized as a **domino effect**; in that case it would state: if for every piece that falls the next one falls too and the first one falls, then it is reasonable to assume that every piece in the line will fall. 
 
-Let's call the map \(\sigma \) "the successor". Notice that the successor of 0 is mapped to something else, which is also in \(\N\). We'll call that "0.next". Now, since 0.next is in \(\N\), it's successor is in \(\N\), too. We'll call that "0.next.next". Now we decide to create new symbols representing these concepts that arise from recursively applying the successor: \(\{0, 1, 2, 3, 4, ...\}\).
+Let's call the map $\sigma$ "the successor". Notice that the successor of 0 is mapped to something else, which is also in $\N$. We'll call that "0.next". Now, since 0.next is in $\N$, it's successor is in $\N$, too. We'll call that "0.next.next". Now we decide to create new symbols representing these concepts that arise from recursively applying the successor: $\{0, 1, 2, 3, 4, ...\}$.
 
 Since we cannot check infinite terms we use the axiom of induction, paired with the others, to prove that all natural numbers are obtained using the successor map:
 
->**_First axiom:_** It is true that 0 is in \(\N\). 
+>**_First axiom:_** It is true that 0 is in $\N$. 
 > 
->**_Second to fourth axioms:_** It is also true that for every \(n \in \N\), the successor of \(n\) is in \(\N \). 
+>**_Second to fourth axioms:_** It is also true that for every $n \in \N$, the successor of $n$ is in $\N$. 
 > 
->**_Fifth axiom:_** Then it is true that every natural number \(n\) is in \(\N\). 
+>**_Fifth axiom:_** Then it is true that every natural number $n$ is in $\N$. 
 
 Finally, we arrived at the definition of natural numbers as we know them. From now on, when we will refer to them, you will not only know the spontaneous and trivial definition, but you'll be able to **formally describe them**.
 
